@@ -9,17 +9,17 @@ export default function App() {
   const [password, setPassword] = useState("")
 
   //3° requisito
-  const [adminPassword, setAdminPassword] = useState("1234")
+  const [adminPassword, setAdminPassword] = useState("656565")
 
   //4° requisito
-  const [userEmail,setUserEmail] = useState('gabriel.santos416@aluno.ce.gov.br')
-  const [userName,setUserName] = useState('Gabriel Marinho dos Santos')
-  const [userBirthday,setUserBirthday] = useState('16/05')
-  const [userPassword, setUserPassword] = useState('12345')
+  const [userEmail,setUserEmail] = useState('lissaamendes@gmail.com')
+  const [userName,setUserName] = useState('Ana Larissa Mendes')
+  const [userBirthday,setUserBirthday] = useState('09/05')
+  const [userPassword, setUserPassword] = useState('656565')
   
 
   const handleLogin = () => {
-    if (email === "gabriel.santos416@aluno.ce.gov.br" && password === 12345) {
+    if (email === "lissaamendes@gmail.com" && password === 656565) {
       alert("Login successful")
       setEmail("")
       setPassword("")
@@ -88,7 +88,7 @@ export default function App() {
           <Pressable style={styles.forgottenPassword} onPress={forgottenPassword}>Esqueci minha senha</Pressable>
           <Pressable style={styles.login} onPress={handleLogin} ><Text style={styles.textLogin} >Entrar</Text></Pressable>
           <Text style={styles.footer} >Não tem uma conta?<Pressable onPress={changeAccount}><Text style={styles.register}>Cadastre-se</Text></Pressable></Text>
-          <Text style={styles.creator}>Criado por Jovêncio Sigma da Bahia</Text>
+          <Text style={styles.creator}>Criado por Larissa Mendes</Text>
         </View>
     </SafeAreaView>
   )
